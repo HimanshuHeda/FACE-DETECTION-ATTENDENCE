@@ -74,4 +74,6 @@ while True:
 
     # cv2.imshow("Webcam", img)
     cv2.imshow("Background", imgBackground)
-    cv2.waitKey(1)
+    key = cv2.waitKey(1) & 0xFF
+    if key == ord('q'):
+        break
